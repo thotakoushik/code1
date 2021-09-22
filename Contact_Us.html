@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <body style="background-color:powderblue;">
+
+    <style>
+        .button {
+          display: inline-block;
+          border-radius: 4px;
+          background-color: #f4511e;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 28px;
+          padding: 20px;
+          width: 200px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+        
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button:hover span {
+          padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+        </style>
+ 
+    <a href="Page1.html"><button class="button" style="vertical-align:middle"><span>Home</span></button></a>
+    <a href="Our_Team.html"><button class="button" style="vertical-align:middle"><span>Our Team </span></button></a>
+    <a href="Our_Services.html"><button class="button" style="vertical-align:middle"><span>Our Services</span></button></a>
+    <a href="Contact_Us.html"><button class="button" style="vertical-align:middle"><span>Contact Us </span></button></a><br>
+
+    <iframe src="Images/map.jpg" width="500" height="450"></iframe>
+
+    <br><br>
+  <Frame>
+    
+    <form action="/action_page.php">
+      <label for="fname" style="font-size: 50px;">First name:</label><br>
+      <input style="font-size: 50px;" type="text" id="fname" name="fname" ><br>
+      <label style="font-size: 50px;" for="lname">E-mail</label><br>
+      <input style="font-size: 50px;" type="text" id="lname" name="lname" ><br><br>
+      <input style="font-size: 40px;" type="submit" value="Submit">
+    </form> 
+     
+   </frame>
+
+    
+</body>
+</html>

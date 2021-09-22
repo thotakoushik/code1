@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <body style="background-color:powderblue;">
+
+    <style>
+        .button {
+          display: inline-block;
+          border-radius: 4px;
+          background-color: #f4511e;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 28px;
+          padding: 20px;
+          width: 200px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+        
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button:hover span {
+          padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+        </style>
+ 
+
+<a href="#" class="photo">
+  <h1>ZIPPY Dog House</h1>
+    <img src="images\banner.jpg" alt="Flowers in Chania" >
+  <div class="glow-wrap">
+    <i class="glow"></i>
+  </div>
+</a>
+
+<a href="About_Us.html"><button class="button" style="vertical-align:middle"><span>About Us </span></button></a>
+<a href="Our_Team.html"><button class="button" style="vertical-align:middle"><span>Our Team </span></button></a>
+<a href="Our_Services.html"><button class="button" style="vertical-align:middle"><span>Our Services</span></button></a>
+<a href="Contact_Us.html"><button class="button" style="vertical-align:middle"><span>Contact Us </span></button></a>
+
+<div>
+  <button onclick="playVid()" type="button">Play Video</button>
+  <button onclick="pauseVid()" type="button">Pause Video</button><br> 
+  
+  <video id="myVideo" >
+    <source src="Images\video.mp4" type="video/mp4">
+    <source src="Images\video.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+  
+  <script> 
+  var vid = document.getElementById("myVideo"); 
+  
+  function playVid() { 
+    vid.play(); 
+  } 
+  
+  function pauseVid() { 
+    vid.pause(); 
+  } 
+  </script> 
+  
+ 
+</div>
+
+
+</body>
+</html>
